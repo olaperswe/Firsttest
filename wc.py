@@ -13,7 +13,7 @@ stopwords_swe=["att", "är", "och","en","det","som","ett","detta","inte","på",
 def filetodict(fp,di,stopwords) :
    """Read a file and populate dictionary with the words, exclude stopwords """
    for line in fp :
-#    line=line.rstrip()
+    line=line.rstrip()
     wds=line.split()
     for w in wds:
         if w not in stopwords:
